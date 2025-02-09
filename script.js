@@ -1,3 +1,9 @@
-document.addEventListener("DOMContentLoaded", function() {
-    alert("Welcome to Mohamed Mahfouz's Portfolio!");
+// script.js
+document.querySelectorAll('nav ul li a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
 });
