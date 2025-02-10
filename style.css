@@ -1,14 +1,22 @@
 /* General Styles */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 
-body {
+* {
+    box-sizing: border-box; /* Ensures padding/margin don't cause layout issues */
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
     font-family: 'Playfair Display', serif; /* Elegant font */
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.8;
-    font-size: 1.5rem; /* Increased font size */
+    font-size: 1.5rem;
+    width: 100%;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 
 /* Header */
@@ -17,11 +25,15 @@ header {
     color: white;
     padding: 30px;
     text-align: center;
+    width: 85%; /* Aligns with the section margins */
+    max-width: 1300px; /* Prevents it from being too wide */
+    margin: 0 auto; /* Centers it */
+    border-radius: 10px; /* Slight rounding for consistency */
 }
 
 header h1 {
     margin: 0;
-    font-size: 3rem; /* Larger header */
+    font-size: 3rem;
     font-weight: bold;
 }
 
@@ -40,7 +52,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 20px;
+    margin: 0 25px;
 }
 
 nav ul li a {
@@ -58,24 +70,23 @@ nav ul li a:hover {
 /* Section Layout */
 section {
     padding: 30px;
-    margin: 20px auto;
-    width: 80%; /* Equal margins from left and right */
-    max-width: 1200px; /* Prevents content from being too stretched */
+    margin: 30px auto; /* Increased margin for better spacing */
+    width: 85%; /* Makes margins larger */
+    max-width: 1300px; /* Prevents it from stretching too much */
     background-color: white;
-    border-radius: 0;
-    box-shadow: none;
+    border-radius: 10px; /* Matches header */
 }
 
 h2 {
     color: #333;
-    font-size: 2.5rem; /* Larger section titles */
+    font-size: 2.5rem;
     font-weight: bold;
     border-bottom: 2px solid #ff6347;
     padding-bottom: 10px;
 }
 
 p {
-    font-size: 1.8rem; /* Larger paragraph text */
+    font-size: 1.8rem;
 }
 
 /* Tech List Section */
@@ -124,9 +135,10 @@ footer {
     background-color: #333;
     color: white;
     padding: 15px 20px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    width: 85%; /* Aligns footer with the content */
+    max-width: 1300px;
+    margin: 0 auto;
+    border-radius: 10px;
 }
 
 .footer-left p {
