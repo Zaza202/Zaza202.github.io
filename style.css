@@ -1,45 +1,45 @@
 /* General Styles */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;600&display=swap');
 
 * {
-    box-sizing: border-box; /* Ensures padding/margin don't cause layout issues */
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 html, body {
-    font-family: 'Playfair Display', serif; /* Elegant font */
+    font-family: 'Playfair Display', serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
-    line-height: 1.8;
-    font-size: 1.5rem;
+    line-height: 1.7;
+    font-size: 1.2rem;
     width: 100%;
-    overflow-x: hidden; /* Prevents horizontal scrolling */
+    overflow-x: hidden;
+    text-align: center;
 }
 
 /* Header */
 header {
     background-color: #333;
     color: white;
-    padding: 30px;
-    text-align: center;
-    width: 85%; /* Aligns with the section margins */
-    max-width: 1300px; /* Prevents it from being too wide */
-    margin: 0 auto; /* Centers it */
-    border-radius: 10px; /* Slight rounding for consistency */
+    padding: 20px;
+    width: 85%;
+    max-width: 1300px;
+    margin: 0 auto;
+    border-radius: 10px;
 }
 
 header h1 {
     margin: 0;
-    font-size: 3rem;
-    font-weight: bold;
+    font-size: 2.2rem;
+    font-weight: 600;
 }
 
 header p {
     margin: 10px 0 0;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
 }
 
 /* Navigation */
@@ -52,13 +52,13 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 25px;
+    margin: 0 20px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
     transition: color 0.3s ease;
 }
@@ -67,26 +67,26 @@ nav ul li a:hover {
     color: #ff6347;
 }
 
-/* Section Layout */
+/* Text Content - No Background */
 section {
     padding: 30px;
-    margin: 30px auto; /* Increased margin for better spacing */
-    width: 85%; /* Makes margins larger */
-    max-width: 1300px; /* Prevents it from stretching too much */
-    background-color: white;
-    border-radius: 10px; /* Matches header */
+    margin: 30px auto;
+    width: 85%;
+    max-width: 1300px;
 }
 
 h2 {
     color: #333;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
     border-bottom: 2px solid #ff6347;
     padding-bottom: 10px;
+    display: inline-block;
 }
 
 p {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
 }
 
 /* Tech List Section */
@@ -105,8 +105,8 @@ p {
 }
 
 .tech-item {
-    font-size: 6rem;
-    font-weight: 900;
+    font-size: 5rem;
+    font-weight: 600;
     text-transform: uppercase;
     color: #333;
     white-space: nowrap;
@@ -135,7 +135,7 @@ footer {
     background-color: #333;
     color: white;
     padding: 15px 20px;
-    width: 85%; /* Aligns footer with the content */
+    width: 85%;
     max-width: 1300px;
     margin: 0 auto;
     border-radius: 10px;
@@ -143,7 +143,7 @@ footer {
 
 .footer-left p {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .footer-right {
@@ -154,7 +154,7 @@ footer {
 .footer-right a {
     color: white;
     text-decoration: none;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     transition: color 0.3s ease;
 }
 
