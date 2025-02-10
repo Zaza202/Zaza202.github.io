@@ -1,44 +1,52 @@
 /* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Playfair Display', serif; /* Elegant font */
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
-    line-height: 1.6;
+    line-height: 1.8;
+    font-size: 1.5rem; /* Increased font size */
 }
 
+/* Header */
 header {
     background-color: #333;
     color: white;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 3rem; /* Larger header */
+    font-weight: bold;
 }
 
 header p {
-    margin: 5px 0 0;
-    font-size: 1.2rem;
+    margin: 10px 0 0;
+    font-size: 1.8rem;
 }
 
+/* Navigation */
 nav ul {
     list-style: none;
     padding: 0;
     margin: 20px 0 0;
+    text-align: center;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 1.5rem;
     font-weight: bold;
     transition: color 0.3s ease;
 }
@@ -47,19 +55,27 @@ nav ul li a:hover {
     color: #ff6347;
 }
 
+/* Section Layout */
 section {
-    padding: 20px;
-    margin: 0; /* Remove margin to expand fully */
-    width: 100%; /* Make it span the entire width */
+    padding: 30px;
+    margin: 20px auto;
+    width: 80%; /* Equal margins from left and right */
+    max-width: 1200px; /* Prevents content from being too stretched */
     background-color: white;
-    border-radius: 0; /* Remove border-radius */
-    box-shadow: none; /* Remove shadow to blend with the background */
+    border-radius: 0;
+    box-shadow: none;
 }
 
 h2 {
     color: #333;
+    font-size: 2.5rem; /* Larger section titles */
+    font-weight: bold;
     border-bottom: 2px solid #ff6347;
     padding-bottom: 10px;
+}
+
+p {
+    font-size: 1.8rem; /* Larger paragraph text */
 }
 
 /* Tech List Section */
@@ -107,7 +123,7 @@ footer {
     align-items: center;
     background-color: #333;
     color: white;
-    padding: 10px 20px;
+    padding: 15px 20px;
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -115,18 +131,18 @@ footer {
 
 .footer-left p {
     margin: 0;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .footer-right {
     display: flex;
-    gap: 15px;
+    gap: 20px;
 }
 
 .footer-right a {
     color: white;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     transition: color 0.3s ease;
 }
 
