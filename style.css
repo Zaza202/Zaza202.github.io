@@ -49,11 +49,11 @@ nav ul li a:hover {
 
 section {
     padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
+    margin: 0; /* Remove margin to expand fully */
+    width: 100%; /* Make it span the entire width */
     background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0; /* Remove border-radius */
+    box-shadow: none; /* Remove shadow to blend with the background */
 }
 
 h2 {
