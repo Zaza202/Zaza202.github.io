@@ -124,11 +124,22 @@ h2 {
     padding-bottom: 10px;
 }
 
-/* "What I Use" Section - Full Width */
+/* "Skills" Section - Full Width */
 .wrapper {
     position: relative;
-    margin: 40px 0;
-    padding: 20px 0;
+    margin: 0; /* Remove any margins */
+    padding: 0; /* Remove any padding */
+    overflow: hidden; /* Ensure the content doesn't overflow */
+    width: 100vw; /* Ensure the wrapper spans the full viewport width */
+    left: 50%; /* Center the wrapper */
+    transform: translateX(-50%); /* Center the wrapper */
+}
+
+/* Headline container with original margins */
+.headline-container {
+    max-width: 1200px; /* Adjust this value to match your original design */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Add padding to match your original design */
 }
 
 /* Tech row spans full width */
@@ -137,8 +148,9 @@ h2 {
     align-items: center;
     gap: 40px;
     white-space: nowrap;
-    animation: scroll 20s linear infinite;
-    width: max-content;
+    width: max-content; /* Allow the row to expand beyond the viewport width */
+    padding: 0; /* Remove any padding */
+    margin: 0; /* Remove any margins */
 }
 
 /* Tech items (text/icons) */
@@ -146,8 +158,20 @@ h2 {
     font-size: 4.5rem;
     font-weight: 700;
     text-transform: uppercase;
-    color: var(--text-color);
+    color: #374151; /* Dark gray color */
     white-space: nowrap;
+    flex-shrink: 0; /* Prevent items from shrinking */
+}
+
+/* Small circle separator */
+.text-3xl svg {
+    color: #374151; /* Dark gray color */
+    flex-shrink: 0; /* Prevent SVG from shrinking */
+}
+
+/* Highlighted tech item */
+.tech-item.highlight {
+    color: #FFA500; /* Orange color */
 }
 
 /* Icon styling */
@@ -156,13 +180,13 @@ h2 {
     font-size: 2rem;
 }
 
-/* Scrolling Animation */
+/* Animation for scrolling */
 @keyframes scroll {
-    from {
-        transform: translateX(100%);
+    0% {
+        transform: translateX(0%);
     }
-    to {
-        transform: translateX(-100%);
+    100% {
+        transform: translateX(-50%);
     }
 }
 
